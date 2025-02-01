@@ -5,7 +5,12 @@ research_task:
     the current year is {current_year}.
   expected_output: >
     A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+
+validation_task:
+  description: >
+    Review the context you got and give a score from 1 to 10 based on the validity of what you wrote.
+  expected_output: >
+    A number between 1-10 representing the validity score
 
 reporting_task:
   description: >
@@ -14,4 +19,4 @@ reporting_task:
   expected_output: >
     A fully fledged report with the main topics, each with a full section of information.
     Formatted as markdown without '```'
-  agent: reporting_analyst
+
